@@ -1,0 +1,264 @@
+$Override: !important;
+$fontMain: Verdana,sans-serif;
+$formPadding: 6px 12px;
+$lineHeight: 1.42857143;
+$white: #fff;
+$black: #000;
+$lightGray: #eee;
+$darkGray: #444;
+$m: 1%;
+$fontSizeMain: 13px;
+$x: 5;
+$padding: 0.65%;
+
+@mixin setBorder($width, $style, $color, $radius: 0px){
+	width: $width;
+	style: $style;
+	color: $color;
+	@if $radius > 0px {
+		radius: $radius;
+	}
+}
+
+@mixin setBorderColor($top, $left, $right, $bottom){
+	border-top-color: $top;
+	border-left-color: $left;
+	border-right-color: $right;
+	border-bottom-color: $bottom;
+}
+
+@mixin setHeightWidth($height, $width){
+	height: $height;
+	width: $width;
+}
+
+@mixin setPos($y, $x){
+	top: $y;
+	left: $x;
+}
+
+@mixin grad($primary, $secondary){
+	background: linear-gradient(top, $primary, $secondary)
+}
+
+@mixin rgbaGrad($rgbSolid, $rgbPrimary, $rgbSecondary, $opacityPrimary: 0.8, $opacitySecondary: 0.9){
+	background: {
+		color: rgba($rgbSolid, 0, 0, 0.8);
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba($rgbPrimary, 0, 0, $opacityPrimary)), to(rgba($rgbSecondary, 0, 0, $opacitySecondary)));
+	}
+}
+
+body {
+	font: {
+		family: $fontMain;
+		size: $fontSizeMain;
+	}
+	background:  {
+		color: $lightGray;
+		image: url(../images/background7.png);
+		attachment: fixed;
+	}
+	margin: $m $m $m $m;
+}
+
+.header, .main {
+	margin: 0px auto;
+	width: 95%;
+}
+
+.logo {
+	cursor: pointer;
+	margin-left: 12%;
+}
+
+.zWebLogo {
+	cursor: pointer;
+	margin-left: 20%;
+	border-radius: 5px;
+	width: 75%;
+}
+
+.zml {
+	display: inline;
+}
+
+.tagLine {
+	@include grad(#888, $darkGray);
+	color: $lightGray;
+	font-style: italic;
+	border: {
+		color: $darkGray;
+	}
+}
+
+.main {
+	@include grad($darkGray, #888);
+	border: {
+		@include setBorder(1px, solid, $black, 5px);
+	}
+	width: 105%;
+	padding: 2%;
+	height: 75%;
+	margin-left: -2%;
+}
+
+.content, nav {
+	margin-left: 2%;
+	width: 118%;
+}
+
+.content {
+	
+}
+
+@media only screen and (min-width: 300px) and (max-width: 520px){
+	.content, .navbar {
+		width: 96% $Override;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.content, .navbar {
+		width: 117% $Override;
+	}
+}
+
+.glare {
+	@include setPos(0%, 0%);
+	@include setHeightWidth(52%, 100%);
+	background: {
+		color: rgba(255, 255, 255, 0.25);
+		image: gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+	}
+	position: absolute;
+	padding: 1% 0;
+}
+
+.webNav {
+	@include rgbaGrad(235, 100, 58);
+	border: {
+		@include setBorder(1px, solid, $black, 8px);
+	}
+	color: $white $Override;
+}
+
+.webName, .webMenu {
+	color: $white $Override;
+	font-weight: bold;
+}
+
+button.submitBtn:enabled {
+	@include rgbaGrad(235, 100, 58);
+	border: {
+		width: 1px;
+		style: solid;
+		color: $black;
+	}
+	color: $white;
+}
+
+button.submitBtn {
+	height: 36px;
+	width: 20%;
+}
+
+.content {
+	a, a:visited {
+		color: #06c;
+	}
+}
+
+a.boldLink {
+	font: {
+		weight: bold;
+		size: 12px;
+	}
+}
+
+.nav {
+	color: $white $Override;
+}
+
+div.zollernForm {
+	background: linear-gradient(#888, #444);
+	color: #eee;
+	border: {
+		@include setBorder(1px, solid, #555, 5px);
+	}
+	padding: 2%;
+	padding-top: 0.56%;
+}
+
+.formButton {
+	background: linear-gradient(#06c, #09f);
+	padding: 0.56% 2%;
+	font: {
+		weight: bold;
+		size: 92%;
+	}
+	border: {
+		@include setBorder(1px, solid, #06c, 5px);
+	}
+	color: #eee;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.title {
+	border-bottom: {
+		@include setBorder(1px, solid, #111, 0px);
+	}
+}
+
+.startingWord {
+	font: {
+		size: 14px;
+		weight: bold;
+		style: italic;
+	}
+}
+
+.content {
+	height: 85%;
+}
+
+.dd {
+	background: $darkGray;
+	color: $lightGray $Override;
+	a {
+		color: $lightGray $Override;
+	}
+	z-index: 1000;
+}
+
+.navItem {
+	a:hover {
+		background: #777 $Override;
+	}
+}
+
+li.divider {
+	background: #999 $Override;
+}
+
+.footer {
+	@include grad($white, #ccc);
+	text-align: center;
+	margin-left: -1.5%;
+	width: 104.2%;
+	border: 1px outset #bbb;
+}
+
+.p {
+	display: block;
+	padding: {
+		top: $padding;
+		bottom: $padding;
+	}
+}
+
+@while $x < 45 {
+	.br-#{$x} {
+		height: #{$x}px;
+	}
+	$x: $x + 5;
+}

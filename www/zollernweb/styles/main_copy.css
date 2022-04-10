@@ -1,0 +1,283 @@
+/* line 11, main_copy.scss */
+body {
+  font-family: Verdana, Arial;
+  font-size: 13px;
+  background: #999;
+}
+
+/* line 19, main_copy.scss */
+nav.navMenu {
+  margin-top: 8%;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  width: 92%;
+  z-index: 1000;
+}
+
+/* line 30, main_copy.scss */
+img {
+  border: none;
+}
+
+/* line 34, main_copy.scss */
+div.logo {
+  width: 50% !important;
+  margin-left: 19%;
+}
+
+/* line 39, main_copy.scss */
+label.formLabel {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 46, main_copy.scss */
+.form-control {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #777;
+  background: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* line 60, main_copy.scss */
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* line 66, main_copy.scss */
+textarea.form-control {
+  height: auto;
+  resize: none;
+  font-family: Verdana, Arial;
+  font-size: 12px;
+}
+
+/* line 73, main_copy.scss */
+button.formButton {
+  display: inline-block;
+  font-family: "$fontMain" !important;
+  font-size: 14px !important;
+  padding: 6px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 86, main_copy.scss */
+.header {
+  width: 100%;
+}
+
+/* line 90, main_copy.scss */
+nav {
+  margin-left: 4%;
+}
+
+/* line 94, main_copy.scss */
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* line 100, main_copy.scss */
+.tinyText {
+  font-size: 11px;
+  margin-left: 7%;
+}
+
+/* line 105, main_copy.scss */
+div.tagLine {
+  position: absolute;
+  padding: 2%;
+  display: block;
+  background: #444;
+  background: -webkit-linear-gradient(#777, #444);
+  background: linear-gradient(#777, #444);
+  color: #ddd;
+  font-style: italic;
+  border: 1px solid #777;
+  border-radius: 5px;
+  width: 87%;
+  margin-left: 4%;
+  z-index: 11;
+}
+
+/* line 120, main_copy.scss */
+.entry {
+  display: inline-block;
+  background: #444;
+  color: #eee;
+  padding: 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* line 129, main_copy.scss */
+.entryTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px;
+}
+
+/* line 136, main_copy.scss */
+.screenshot {
+  height: 140px;
+  width: 200px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* line 143, main_copy.scss */
+.content {
+  background: #eee;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 97%;
+  margin-top: 6%;
+  margin-left: 2%;
+  height: 785px;
+}
+
+/* line 153, main_copy.scss */
+.contentBreak34 {
+  height: 34px;
+}
+
+/* line 157, main_copy.scss */
+.contentBreak20 {
+  height: 20px;
+}
+
+/* line 161, main_copy.scss */
+.contentBreak25 {
+  height: 25px;
+}
+
+/* line 165, main_copy.scss */
+.contentBreak100 {
+  height: 100px;
+}
+
+/* line 169, main_copy.scss */
+.hireMe {
+  color: #eee;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline !important;
+  padding: 2px;
+}
+
+/* line 178, main_copy.scss */
+.subContents {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+  height: 610px;
+  padding: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: -2%;
+  margin-left: 2%;
+  text-indent: 2%;
+}
+
+/* line 192, main_copy.scss */
+.policies li {
+  line-height: 1.42;
+}
+
+/* line 196, main_copy.scss */
+.aquaButton {
+  width: 8%;
+  height: 24px;
+  font-size: 16px;
+  padding: 5px 16px 3px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  position: relative;
+  font-family: "Lucida Sans",Helvetica,sans-serif;
+  font-weight: 800;
+  color: #eee;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: rgba(235, 0, 0, 0.8);
+  background: gradient(linear, 0% 0%, 0% 90%, from(rgba(100, 0, 0, 0.8)), to(rgba(58, 0, 0, 0.9)));
+  border-top-color: #f00;
+  border-right-color: #8b0000;
+  border-bottom-color: #a00;
+  border-left-color: #c50000;
+  box-shadow: rgba(66, 0, 0, 0.5) 0px 10px 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 224, main_copy.scss */
+.hireButton {
+  width: 10%;
+  height: 24px;
+  font-size: 16px;
+  padding: 5px 16px 3px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  position: relative;
+  font-family: "Lucida Sans",Helvetica,sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: rgba(0, 150, 236, 0.8);
+  background: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 50, 50, 0.8)), to(rgba(0, 20, 35, 0.9)));
+  border-top-color: #0af;
+  border-right-color: #0099ff;
+  border-bottom-color: #0099ff;
+  border-left-color: #0099ff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 252, main_copy.scss */
+.glare {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  border-radius: 8px;
+  height: 1px;
+  width: 142px;
+  padding: 8px 0;
+  background: rgba(255, 255, 255, 0.25);
+  background: gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+}
+
+/* line 264, main_copy.scss */
+footer {
+  color: #eee;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main_copy.css.map */

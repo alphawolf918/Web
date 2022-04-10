@@ -1,0 +1,273 @@
+$Override: !important;
+$fontMain: Verdana;
+$formPadding: 6px 12px;
+$lineHeight: 1.42857143;
+
+@mixin setBorder($width, $style, $color, $radius){
+	width: $width;
+	style: $style;
+	color: $color;
+	radius: $radius;
+}
+
+@mixin setBorderColor($top, $left, $right, $bottom){
+	border-top-color: $top;
+	border-left-color: $left;
+	border-right-color: $right;
+	border-bottom-color: $bottom;
+}
+
+@mixin setHeightWidth($height, $width){
+	height: $height;
+	width: $width;
+}
+
+@mixin setPos($y, $x){
+	top: $y;
+	left: $x;
+}
+
+body {
+	font: {
+		family: $fontMain;
+		size: 13px;
+	}
+	background: #eee;
+	margin: 1% 1% 1% 1%;
+}
+
+nav.navMenu {
+	margin: {
+		top: 8%;
+		right: auto;
+	}
+	text-align: center;
+	position: absolute;
+	width: 92%;
+	z-index: 1000;
+}
+
+img {
+	border: none;
+}
+
+div.logo {
+	width: 50% $Override;
+	margin-left: 19%;
+}
+
+label.formLabel {
+	font: {
+		weight: bold;
+		size: 14px;
+	}
+}
+
+.form-control {
+	border: {
+		@include setBorder(1px, solid, #ccc, 4px);
+	}
+	display: inline-block;
+	padding: $formPadding;
+	font-size: 14px;
+	line-height: $lineHeight;
+	color: #777;
+	background: #fff;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	&:focus {
+		border-color: #66afe9;
+		outline: 0;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	}
+}
+
+textarea.form-control {
+	font: {
+		family: $fontMain;
+		size: 12px;
+	}
+	height: auto;
+	resize: none;
+}
+
+button.formButton {
+	border: {
+		@include setBorder(1px, solid, #ddd, 4px);
+	}
+	font: {
+		family: $fontMain $Override;
+		size: 14px $Override;
+	}
+	display: inline-block;
+	padding: $formPadding;
+	text-align: center;
+	cursor: pointer;
+}
+
+.z-header {
+	width: 100%;
+}
+
+nav {
+	margin-left: 4%;
+}
+
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.tinyText {
+	font-size: 11px;
+	margin-left: 7%;
+}
+
+div.tagLine {
+	border: {
+		@include setBorder(1px, solid, #777, 5px);
+	}
+	position: absolute;
+	padding: 2%;
+	display: block;
+	background: linear-gradient(#777, #444);
+	color: #ddd;
+	font-style: italic;
+	width: 87%;
+	margin-left: 4%;
+	z-index: 11;
+}
+
+.entry {
+	@include setBorder(1px, solid, #000, 5px);
+	display: inline-block;
+	background: #444;
+	color: #eee;
+	padding: 4px;
+}
+
+.entryTitle {
+	font: {
+		weight: bold;
+		size: 14px;
+	}
+	text-align: center;
+	padding: 2px;
+}
+
+.screenshot {
+	@include setHeightWidth(140px, 200px);
+	border: {
+		@include setBorder(1px, solid, #000, 5px);
+	}
+}
+
+.content {
+	@include setHeightWidth(785px, 97%);
+	border: {
+		@include setBorder(2px, solid, #ddd, 5px);
+	}
+	margin: {
+		@include setPos(6%, 2%);
+	}
+	background: #eee;
+}
+
+.contentBreak34 {
+	height: 34px;
+}
+
+.contentBreak20 {
+	height: 20px;
+}
+
+.contentBreak25 {
+	height: 25px;
+}
+
+.contentBreak100 {
+	height: 100px;
+}
+
+.hireMe {
+	font: {
+		size: 14px;
+		weight: bold;
+	}
+	color: #eee;
+	text-decoration: underline $Override;
+	padding: 2px;
+}
+
+
+.subContents {
+	@include setHeightWidth(610px, 95%);
+	border: {
+		@include setBorder(1px, solid, #ccc, 5px);
+	}
+	margin: {
+		@include setPos(-2%, 2%);
+	}
+	overflow: {
+		y: auto;
+		x: hidden;
+	}
+	background: #fff;
+	padding: 4px;
+	text-indent: 2%;
+}
+
+.policies {
+	li {
+		line-height: $lineHeight;
+	}
+}
+
+.aquaButton {
+	@include setHeightWidth(24px, 8%);
+	border: {
+		@include setBorder(2px, solid, #ccc, 5px);
+	}
+	@include setBorderColor(#f00, #c50000, #8b0000, #a00);
+	font: {
+		family: "Lucida Sans",Helvetica,sans-serif;
+		size: 16px;
+		weight: 800;
+	}
+	text: {
+		shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+		align: center;
+		overflow: ellipsis;
+	}
+	background: {
+		color: rgba(235, 0, 0, 0.8);
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(100, 0, 0, 0.8)), to(rgba(58, 0, 0, 0.9)));
+	}
+	padding: 5px 16px 3px;
+	position: relative;
+	color: #eee;
+	vertical-align: middle;
+	white-space: nowrap;
+	overflow: hidden;
+	box-shadow: rgba(66, 0, 0, 0.5) 0px 10px 16px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.glare {
+	@include setPos(0, 5px);
+	@include setHeightWidth(1px, 142px);
+	background: {
+		color: rgba(255, 255, 255, 0.25);
+		image: gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+	}
+	position: absolute;
+	border-radius: 8px;
+	padding: 8px 0;
+}
+
+footer, .footer {
+	color: #eee;
+	text-align: center;
+} 
