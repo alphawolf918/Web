@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vars>
+  <variable name="bookname">Harry Potter</variable>
+  <variable name="favoritebook">Harry Potter</variable>
+  <variable name="name">Paul</variable>
+</vars>

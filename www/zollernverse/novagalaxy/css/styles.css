@@ -1,0 +1,24 @@
+body {
+	background: url(../hubble.jpg);
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.controlPanel {
+	margin-left: 25%; margin-top: 20%; border: 2px outset #000; border-radius: 5px; padding: 4px; width: 45%; text-align: center; background: #555; color: #eee;
+}
+
+.txtInput {
+	border: 1px solid #ddd; border-radius: 5px; color: #444; font-family: Verdana; font-size: 12px; line-height: 1.42; height: 30px;
+}
+
+button {
+	border: 2px outset #eee;
+	border-radius: 5px;
+	color: #eee;
+	background: #444;
+	font-family: Verdana;
+	font-size: 12px;
+	line-height: 1.42;
+	height: 30px;
+}

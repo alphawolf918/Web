@@ -1,0 +1,7 @@
+RewriteRule ^\/?about\/?$ index.php?p=about [NC]
+RewriteRule ^\/?donate\/?$ index.php?p=donate [NC]
+RewriteRule ^\/?download(s)?\/?$ index.php?p=download [NC]
+RewriteRule ^\/?home\/?$ index.php [NC]
+RewriteRule ^\/?rules\/?$ index.php?p=rules [NC]
+RewriteRule ^\/?server\/?$ index.php?p=server [NC]
+RewriteRule ^\/?wiki\/?$ index.php?p=wiki [NC,L]

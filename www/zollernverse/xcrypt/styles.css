@@ -1,0 +1,148 @@
+body {
+	font-family: "Verdana";
+	font-size: 12px;
+	background-image: url(bg.png);
+	background-attachment: fixed;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	color: #777;
+}
+
+.container {
+	width: 85%;
+	min-height: 75%;
+	max-height: 95%;
+	position: absolute;
+	background: #eee;
+	border: 2px solid #ddd;
+	padding: 4px;
+	border-radius: 6px;
+	margin-left: 6%;
+}
+
+.container, #about {
+	background: -moz-linear-gradient(top,  #fefefe,  #ccc);
+}
+
+.form-control {
+	display: inline-block;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.22857143;
+	color: #777;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+
+label {
+	font-size: 13px;
+	font-weight: bold;
+	color: #444;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	color: #555;
+	height: 380px;
+}
+
+legend {
+	font-size: 16px;
+}
+
+.cblock {
+	display: inline-block;
+}
+
+.formButton {
+	font-size: 15px;
+}
+
+#password {
+	border: 1px inset #ddd;
+	border-radius: 8px;
+	width: 56%;
+	height: 105px;
+	margin-left: 28%;
+	background: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: auto;
+	cursor: text;
+}
+
+.subtitle {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	background: #000;
+	color: #eee;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 2px;
+	height: 16px;
+}
+
+#nmbr {
+	font-size: 16px;
+	vertical-align: top;
+}
+
+#author {
+	color: #555;
+}
+
+a, a:visited {
+	color: #09f;
+	text-decoration: none;
+}
+
+#share {
+	text-align: center;
+}
+
+#about {
+	display: none;
+	min-height: 45%;
+	width: 85%;
+	position: absolute;
+	margin-top: 40%;
+	margin-left: 6%;
+	padding: 4px;
+}
+
+.icon {
+	height: 64px;
+	width: 64px;
+}
+
+.aboutText {
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 2px;
+}

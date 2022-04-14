@@ -1,0 +1,177 @@
+>> help
+	Prints this help message.
+
+>> #
+	Allows for comments, but the last line of the comment MUST end with a semicolon (;) or the next line will NOT be parsed - it will be looked over.
+
+>> #!xsp;
+	Necessary declaration at the very top of an external XSP (.xsp) file, must end with a semicolon (;) - if this declaration is missing, the file will not be parsed.
+
+>> #!xsp-module;
+	Necessary declaration at the very top of an external XSP (.xsp) module file, must end with a semicolon (;) - if this declaration is missing, the module will not be parsed.
+
+>> create example.xml with root(parent)
+	Creates the file example.xml with parent as the parent node
+
+>> delete example.xml
+	Deletes the example.xml file
+
+>> select //elem from example.xml
+	Selects and displays the contents of the elem node in example.xml
+
+>> select //elem from example.xml where //elem/name = "example"
+	Searches for and, if successful, displays the value of the desired element, provided it meets the criteria specified by the 'where' clause. Complex variables depend on this functionality.
+
+>> return //element from example.xml
+	Returns the contents of the element node in example.xml, rather than print them
+
+>> return //elem from example.xml where //elem/name = "example"
+	Searches for and, if successful, returns the value of the desired element, provided it meets the criteria specified by the 'where' clause. Complex variables depend on this functionality.
+
+>> set var name = "val"
+	Creates the name variable with the val value. Simplex variables.
+
+>> set attr @name="val" to //elem in example.xml
+	Sets the name attribute's value in the elem tag to val in example.xml
+
+>> print var:name
+	Outputs the value of the name variable. Simplex variables.
+
+>> echo
+	An alias of print.
+
+>> returnvar var:name;
+	Retrieves and RETURNS the value of the 'name' variable, rather than printing it. Simplex variables.
+
+>> rename oldname.xml to newname.xml
+	Renames the file oldname.xml to newname.xml.
+
+>> dir make testdir
+>> dir mk testdir
+	Creates the new testdir directory.
+
+>> dir rm testdir
+>> dir remove testdir
+>> dir del testdir
+>> dir delete testdir
+	Deletes the testdir directory.
+
+>> dir rn testdir to testdir2
+>> dir rename testdir to testdir2
+	Renames the testdir directory to testdir2.
+
+>> directory
+	An alias of dir.
+
+>> var set name = "Paul"
+	Complex variables: creates a new variable element in bin/variables.xml, setting a name attribute to the name of the variable and a text node to the value of the variable.
+
+>> var get name
+	Complex variables: searches for and returns the value of the name variable.
+
+>> var del name
+>> var delete name
+	Complex variables: deletes the name variable.
+
+>> var return name
+	Complex variables: searches for and returns the value of the name variable.
+
+
+>> variable
+	An alias of var.
+
+	** NOTE: Complex variables differ from Simplex variables in that they are not stored in the generic memory.xml file; rather, they are stored in a 'bin' folder, in a file named variables.xml. This is the more professional/protected way of variable usage.
+
+>> append element child to //parent in example.xml
+	Adds the child element as a child node of the parent element
+
+>> append text "This is a string" to //child in example.xml
+	Adds the text enclosed in quotes to the child element in example.xml
+
+>> drop //child[1] from example.xml
+	Removes the first child element entirely (along with its children) in example.xml.
+
+>> move //element from file1.xml to //otherelement in file2.xml
+	Moves the VALUE of the 'element' node from file1.xml to the 'otherelement' node in file2.xml. The original node is left empty.
+
+>> copy //element from file1.xml to //otherelement in file2.xml
+	Works exactly like the move command, but leaves the original value.
+
+
+>> get attr @name from //elem in example.xml
+	Selects and displays the value of the name attribute of the elem node in example.xml
+
+>> returnattr @name from //element in example.xml
+	Returns the value of the name attribute in the element node in example.xml, rather than print it
+
+>> if (var:name=val) then <out "Correct">
+	A conditional statement that checks to see if the name variable has a value of val, and if the condition returns true, outputs "Correct" to the browser. Uses the Simplex version of variables.
+
+>> if (var:name=val) then <out "Correct"> else <out "Incorrect">
+	Same as above, except that if it returns false, outputs "Incorrect" to the browser. Uses the Simplex version of variables.
+
+>> for i to 4 <out i>
+	Prints out pre-initialized variable i and increments it until it reaches 4. Uses the Simplex version of variables.
+
+>> parse example.xsp
+	Parses all XSP commands (that are separated by semicolons) in example.xsp
+	** Even though the user must type out .xsp when parsing, the file will not be parsed if the extension is different - this is both a security measure and a preparation for future versions.
+
+>> clear()
+	Empties the XSP memory XML file
+
+>> clearerr()
+	Empties the XSP error log file.
+
+>> change nodeValue of //elem to "new value" in example.xml
+	Changes the text of the elem element to new value in example.xml
+
+>> update
+	An alias of change.
+
+>> -- i
+    decrement i
+    decrease i
+	Decrements i by 1. Uses the Simplex version of variables.
+
+>> -- i by 5
+    decrement i by 5
+    decrease i by 5
+	Decrements i by 5. Uses the Simplex version of variables.
+>> ++ i
+    increase i
+    increment i
+	Increments i by 1. Uses the Simplex version of variables.
+
+>> ++ i by 5
+    increase i by 5
+    increment i by 5
+	Increments i by 5. Uses the Simplex version of variables.
+
+>> out "hello world"
+	Prints "hello world" to the browser/console.
+
+>> out var:name;
+	Outputs the value of the name variable. Simplex variables.
+
+>> say
+	An alias of out.
+	
+>> mod define : helloworld {out "hello ",out "world"}
+	Defines a new module (function) inside of XSP's internal memory, and creates an XSP module file to match it.
+
+>> mod call : helloworld()
+	Calls the helloworld module, whether it exists in memory OR as a file.
+
+>> mod remove : helloworld()
+	Deletes the helloworld() module from memory and from file.
+
+>> module
+	An alias of mod.
+
+>> new class myclass
+	Creates myclass.xml with root class
+	Class tag has attributes name="myclass" and mod="Public"
+	Generates with an XSLT stylesheet
+	Lists members and variables on the web page
+	Generates and saves in a "classes" folder

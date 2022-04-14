@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<!--
+		- Hire Me! file for dance studio web site.
+		- Author: Paul T. Shannon, Jr.
+		- Date of Original Creation: June 15th, 2015
+		- Please do not remove this copyright.
+		- http://design.zollernverse.org/
+		-->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="all" />
+		<script src="scripts/jquery.js"></script>
+		<title>Example Site - Hire Me!</title>
+	</head>
+	<body>
+		<div class="br"></div>
+		<noscript>It is highly recommended that you have JavaScript enabled to view this web site properly.</noscript>
+		<div id="container">
+			<nav id="navMain">
+				<div class="navButton"><a href="index.html" class="navLink" id="linkHome">Home</a></div>
+				<div class="navButton"><a href="contact.html" class="navLink">Contact</a></div>
+				<div class="navButton"><a href="resume.docx" class="navLink" id="linkResume">Resumé</a></div>
+				<div class="navButton"><a href="hire.html" class="navLink" id="linkHire" style="font-weight: bold;">*Hire Me!</a></div>
+				<div class="navButton"><a href="clips.html" class="navLink" id="linkClips">Gallery</a></div>
+				<div class="navButton"><a href="services.html" class="navLink" id="linkServices">Services</a></div>
+			</nav>
+			<div class="brb"></div>
+			<div id="header">
+				Example Header
+			</div>
+			<div class="br"></div>
+			<div class="br"></div>
+			<div id="main">
+				<div class="br"></div>
+				<div class="br"></div>
+				  &nbsp; &nbsp; &nbsp; &nbsp;
+				 <div id="res" style="display: inline-block;"></div>
+				 <div class="brb"></div>
+				 &nbsp; &nbsp; &nbsp; &nbsp;
+				 <form action="mailto:leah.catherine.parris@gmail.com" method="post" enctype="text/html" id="emailForm">
+					<p>E-Mail: &nbsp;&nbsp; <input type="text" size="40" name="email" class="form-control" /></p>
+					<p>Subject: <input type="text" size="40" name="subject" class="form-control" /></p>
+					<p>Message:
+					<br />
+					<textarea cols="55" rows="10" name="message" id="msg" class="form-control"></textarea></p>
+					<p><button type="submit" name="submit">Send</button></p>
+				 </form>
+				 <script>
+				 $(document).ready(function(){
+					$.ajax({
+						type: "GET", url: "why-you-should-hire-me.txt",
+						complete: function(data){
+							$('#res').html(data.responseText);
+						}
+					});
+				 });
+				 </script>
+			</div>
+		</div>
+		<script src="scripts/external.js"></script>
+	</body>
+</html>

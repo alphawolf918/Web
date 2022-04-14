@@ -1,0 +1,42 @@
+.catbg{
+text-align:center;
+}
+.titlebg,.catbg{
+background:url("http://www.dreamspand.com/chaotalk/gradient2.jpg");
+}
+textarea[name="header"],textarea[name="footer"]{
+color:#000000;
+font-family:Courier New !important;
+}
+textarea,input,select,option{
+color:#000000;
+font-family:Verdana,Arial;
+}
+input{
+background-position:top;
+background-repeat:no-repeat;
+}
+input[type="submit"],input[type="button"],input[type="reset"]{
+background-position:bottom !important;
+}
+textarea,input,select{
+border:1px solid #000000;
+border-radius: 10px;
+}
+select,option{
+font-size:11px;
+}
+.titlebg,.catbg,.windowbg,.windowbg2{
+border:1px solid #0099ff;
+}
+.code,.quote{
+font-size:11px;
+background:#3399ff;
+}
+pre{
+font-family: "Courier New",Verdana,Arial;
+font-size:11px;
+}
+ul > li{
+list-style-image:url("http://www.dreamspand.com/chaotalk/millennium/list.gif");
+}

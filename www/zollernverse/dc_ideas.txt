@@ -1,0 +1,58 @@
+* The Player should have an inventory [D]
+* Buy seeds to plant trees
+	* Fruit should grow on trees
+		* When the fruit is ready, click on it to put it in your inventory
+* Implement "chao drives" to give to chao for stats instead of just fruit
+	* These can be bought from the Chao Mart [D]
+* Add Hunger and Mood stats to add variety to the game
+* Give the option to click on Shadow instead of only Sonic
+* Let chao form "friendship bonds" with other chao that they visit [?]
+* Give the option for different "habitats" - the PC box icons from Pokemon
+	* In these new habitats, allow objects to be placed and interacted with that the chao can't pass through
+	* Habitats should be buyable from the Chao Mart
+		* Eventually have furniture and special things that can be bought to customize the chao's habitat
+	* Each chao will have an environmental preference
+		* Chao are happier when in their desired habitat, and sadder when they are not
+	* Have the option for more than 1 chao per habitat
+* Once the chao's run is lvl 3, they should be able to walk around [?]
+	* The higher the run stat, the faster they move
+	* Implement a basic path-finding A.I.
+	* Disallow the chao to collide with objects that aren't allowed it
+		* Use 'events' to determine this
+	* Have a chat box for game-wide user interaction [?]
+		* In-game events happen randomly that all users can participate in, notifications will be sent in chat
+* Hero and Dark fruit
+* Award the Player tokens for when chao:
+	* Evolve [D]
+		* Special and rare evolutions reward MUCH more tokens [D]
+	* Reincarnate [D]
+	* Participate in an event
+	* Are born [D]
+	* Breed [D]
+	* Get fed [D]
+* Change mostly everything to jQuery asynchronous interaction
+* Add a couple more custom evolutions for Special chao
+	* These evolutions are currently as of yet undetermined at this time
+* Eventually implement new colors of chao [WIP]
+	* Use GIMP to edit the colors of each frame - there is an option to re-export it as an animated GIF
+	* This will likely be MUCH later
+* Implement an RNG (a random name generator) for the Player to name the chao with [D]
+* Adoption Forest "deletes" chao that are in it once a month
+	* Equivalent to the chao running away on the real game
+* The chao's happiness meter will be more complex
+	* Affected by environment, diet, stats, frequency of visits, hunger and mood
+	* The chao will sometimes be ready to breed, but not always
+		* Happiness plays a significant role in this factor
+* Have an "Adventure" mode [?]
+	* In this mode, the Player should be able to walk around in a field
+		* The Player can find various items and minerals to take back
+			* These items and minerals should be able to be crafted into different, useful items
+		* Chao Drives can also be found here
+		* Extremely rarely, a Player might find a Chaos Emerald
+		* Chao eggs and lost chao can sometimes be found here
+	* This will likely be MUCH later if at all
+* Chao should have genders (male, female)
+	* Only a male can mate with a female and vice versa
+* Chao should have Intelligence and Luck stats
+
+D = Done, ? = Maybe

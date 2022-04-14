@@ -1,0 +1,18 @@
+.catbg, .titlebg {
+ background: url("lightchaoschaogradient.gif");
+ height: 30px !important;
+}
+.bgimage {
+background: #e0eeee;
+border: 2px outset #ffeeee;
+}
+.windowbg, .windowbg2 {
+border: 2px outset #ffeeee;
+}
+input, textarea, select, option {
+background: #ddeeff;
+color: #555555;
+}
+input, textarea, select {
+background: 2px inset #ffeeee;
+}

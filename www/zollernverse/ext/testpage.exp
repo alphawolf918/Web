@@ -1,0 +1,6 @@
+%PAGENAME%=Test Page
+%CATEGORY%=siteinfo
+%CONTENT%=This is a test of the import system.
+%ALIAS%=testpage
+%TAGS%=test,page,import,export,system,cms
+%PUBLISHED%=true

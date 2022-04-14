@@ -1,0 +1,26 @@
+.titlebg,.catbg{
+ background:url("http://h1.ripway.com/ChaoBreederXL/vista.png");
+  text-align:center;
+ }
+  table{
+   border-collapse:collapse;
+ }
+  td{
+   border:2px outset #00008b;
+ }
+  select,input,textarea,option{
+   background:#00008b;
+    color:#ffffff;
+  }
+   select,input,textarea{
+    border:2px outset #3399ff;
+  }
+     body{
+      background:url("http://h1.ripway.com/codedragon/bg.png") repeat fixed;
+   }
+    .windowbg,.windowbg2.titlebg,.catbg{
+      border:4px outset #000000 !important;
+   }
+ a:hover{
+  text-decoration:none;
+}

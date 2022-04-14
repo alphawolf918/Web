@@ -1,0 +1,21 @@
+.titlebg,.catbg{
+background-image:url("gradient4.jpg");
+text-align:center;
+}
+body{
+background:url("nwiizone.com-wallpaper-1.jpg") fixed;
+margin:0;
+padding:0;
+}
+input,textarea,select,option{
+font-size:11px;
+color:#0000ff;
+-moz-opacity:.95;
+filter:alpha(opacity=95);
+}
+.titlebg,.catbg,.windowbg,.windowbg2{
+border:2px double #eeeeee;
+}
+input,textarea,select{
+border:2px inset #0000ff;
+}

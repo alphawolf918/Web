@@ -1,0 +1,24 @@
+.catbg, .titlebg {
+background: url("angelchao.gif");
+height: 30px !important;
+}
+.windowbg, .windowbg2 {
+border: 2px outset #ff83fa;
+}
+input, textarea, select, option {
+background: #FF90FD;
+color: #ffffff;
+}
+input, textarea, select {
+border:1px inset #ffffff;
+}
+select, option{
+font-size:13px;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+border:2px outset #ffffff;
+}
+.bgimage{
+background-image: url("background.gif");
+border: 2px outset #ff83fa;
+}

@@ -1,0 +1,46 @@
+.chaoLabel {
+	text-decoration: underline;
+	display: inline !important;
+}
+
+.icon {
+	height: 16px;
+	width: 16px;
+}
+
+.invItem {
+	background: #ddd;
+	border-radius: 4px;
+	border: 2px inset #eee;
+	height: 50px;
+	width: 50px;
+	padding: 2px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 10px;
+	display: inline-block;
+	line-height: 1.42857143;
+	margin-left: 3%;
+}
+
+.inventory {
+	height: 280px;
+	width: 210px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	line-height: 1.42857143;
+	background: #eee;
+	border: 2px outset #ddd;
+	border-radius: 8px;
+	padding: 4px;
+	display: inline-block;
+	margin-top: -5%;
+}
+
+.brl {
+	height: 3px;
+}
+
+.brm {
+	height: 6px;
+}

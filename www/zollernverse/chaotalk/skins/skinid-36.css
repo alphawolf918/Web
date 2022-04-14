@@ -1,0 +1,16 @@
+.titlebg,.catbg{
+background-image:url("http://i115.photobucket.com/albums/n301/pheonixflames_18/Darkchaogra.png");
+text-align:center;
+height: 27px;
+}
+input,textarea,select,option{
+font-size:12px;
+font-family: "Verdana";
+color:#cd661d;
+background: #000000;
+-moz-opacity:.95;
+filter:alpha(opacity=95);
+}
+input,textarea,select{
+border:2px solid #ff0000;
+}

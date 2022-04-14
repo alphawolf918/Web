@@ -1,0 +1,6 @@
+%PAGENAME%=XCrypt Secure
+%CATEGORY%=webapps
+%CONTENT%= XCrypt Secure is a Web application used to generate complex and hard-to-crack passwords. It was created by Zollern Wolf and can be accessed at the below link:<br><br><a href="http://www.zollernverse.org/xcrypt/index.php" onclick="window.open(this.href);return false;">http://www.zollernverse.org/xcrypt/index.php</a><br>
+%ALIAS%=xcrypt
+%TAGS%=xcrypt, secure, security, password, generation, generator, help, web app
+%PUBLISHED%=true

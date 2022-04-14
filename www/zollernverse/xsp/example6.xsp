@@ -1,0 +1,3 @@
+#!xsp;
+
+select /books/book[1]/title@lang from books.xml;

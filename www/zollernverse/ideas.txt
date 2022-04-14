@@ -1,0 +1,4 @@
+[*] Secondary E-Mails
+[*] Password Tips
+[*] Link To XCrypt Password Generator
+[*] Optional password complexity and expiration (Required for site admins)

@@ -1,0 +1,19 @@
+<!--
+th{background-image:url("http://h1.ripway.com/ChaoBreederXL/gradient.bmp");color:#00008b;border:1px solid #000000;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;color:#0000ff;}
+.windowbg{background-color:#f0f0f0;font-size:11px;color:#3399cc;}
+.windowbg2{background-color:#f5f5f5;font-size:11px;color:#3399cc;}
+input,textarea,select,button{background-color:#fafafa;color:#0000ff;font-family: Sylfaen,Verdana,Arial,Helvetica;border: 1px dashed #0099ff;font-size:12px;-moz-opacity:.50;}
+input[type="submit"]{border:2px outset #f5f5f5 !important;}
+input[type="text"], input[type="password"]{border:2px inset #000000 !important;font-family:Sylfaen,Times New Roman, Verdana, Arial, Helvetica, Terminal;}
+textarea{font-size:12px;background-color:#fafafa;color:#0000ff;}
+.titlebg{background-image:url("http://h1.ripway.com/ChaoBreederXL/gradient.bmp");background-color:#f7f7f7;font-style:normal;font-weight:bold;font-size:12px;color:#3399cc;height:28px;}
+.windowbg,.windowbg2,.titlebg,.catbg{border: 1px dotted #f5f5f5;}
+.bordercolor{background-color:#f7f7f7;}
+.quote{font-size:10px;color:#0000ff;background-color:#ffffff;border: 1px solid #000000;}
+.code{font-size:10px;font-family:Courier New; color:#00000ff;background:#ffffff;}
+.catbg{background-image:url("http://h1.ripway.com/ChaoBreederXL/gradient.bmp");background-color:#f7f7f7;color:#3399cc;font-weight:bold;font-size:13px;height:30px;text-align:center;}
+hr{color:#f9f9f9;}
+-->

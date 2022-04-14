@@ -1,0 +1,6 @@
+RewriteRule ^\/?about\/?$ index.php?p=about [NC]
+RewriteRule ^\/?contact\/?$ index.php?p=contact [NC]
+RewriteRule ^\/?services\/?$ index.php?p=services [NC]
+RewriteRule ^\/?policy\/?$ index.php?p=policy [NC]
+RewriteRule ^\/?hire-me\/?$ index.php?p=hireme [NC]
+RewriteRule ^\/?home\/?$ index.php [NC,L]

@@ -1,0 +1,6 @@
+#!xsp;
+
+clear();
+set var i = "0";
+for i to 2 {drop //id from accounts.xml};
+change nodeValue of //user[2]/name to "mpearson" in accounts.xml;

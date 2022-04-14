@@ -1,0 +1,14 @@
+.titlebg,.catbg{
+text-align:center;
+background-image:url("nightsgradient.png");
+}
+.titlebg,.catbg,.windowbg,.windowbg2{
+border:1px double #00008b;
+}
+input,textarea,select,option{
+background-color:#6699cc;
+color:#ffffff;
+}
+input,textarea,select{
+border:1px dashed #ffffff;
+}

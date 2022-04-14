@@ -1,0 +1,34 @@
+---------------------
+--Planet Randomizer--
+-[Project Idea]-
+[Uses procedural generation to create a database of a galaxy]
+---------------------
+
+[Functions by running a loop from 1 to 10, up to 18 times]
+
+-List of names to choose from (beginning, first middle, second middle, end), with the first and second middles being optional
+	-Every single name can only be used once
+	-Stars will have 3 syllables at most
+		-Planets will have up to 4
+-For every solar system generated:
+	-if it has planets
+	-how many planets if the above is true
+	-distance from the galactic center (37,925,487,807 miles to 621,371,192,237,333,890 miles)
+	-size (from 1,989,100 * 10^5 kg to 509,209,600 * 10^5 kg)
+	-temp (5,778 K to 40,000 K)
+	-For every planet generated:
+		-if it has moons
+		-how many moons if the above is true
+		-temperature (From -380 to 801 F)
+		-distance from its star (92,950,000 miles to 3,600,000,000 miles)
+		-size (1.30900 × 10^22 kg to )
+		-atmospheric gasses (nitrogen, oxygen, argon, carbon dioxide, neo, helium, methane)
+		-is habitable
+		-star_id
+		-For every moon generated:
+			-scale factor (how much the temperature of the moon is multiplied or divided, ranging from 2 to 8)
+			-temperature (%planetTemp% / 4 F to %planetTemp% * 4F)
+			-distance of moons from planet (238,855 miles to 10,986 miles)
+			-atmospheric gasses
+			-is habitable
+			-planet_id

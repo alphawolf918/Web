@@ -1,0 +1,45 @@
+.catbg{
+text-align:center;
+}
+.titlebg,.catbg{
+background:url("http://www.uchaogarden.com/chaotalk/gradient2.jpg");
+}
+textarea,input,select,option{
+background-color:#0099ff;
+}
+textarea[name="header"],textarea[name="footer"]{
+color:#000000;
+font-family:Courier New !important;
+}
+textarea,input,select,option{
+color:#ffff00;
+font-family:"Comic Sans MS",Verdana,Arial;
+}
+input{
+background-image:url("http://img162.imageshack.us/img162/6937/pchaosc2.jpg");
+background-position:top;
+background-repeat:no-repeat;
+}
+input[type="submit"],input[type="button"],input[type="reset"]{
+background-position:bottom !important;
+}
+textarea,input,select{
+border:1px dashed #ffff00;
+}
+select,option{
+font-size:11px;
+}
+.titlebg,.catbg,.windowbg,.windowbg2{
+border:1px solid #0099ff;
+}
+.code,.quote{
+font-size:11px;
+background:#3399ff;
+}
+pre{
+font-family: "Courier New",Verdana,Arial;
+font-size:11px;
+}
+ul li{
+list-style-image:url("http://www.uchaogarden.com/forum/images/list.png");
+}

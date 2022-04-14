@@ -1,0 +1,19 @@
+.windowbg, .windowbg2, .bgimage {
+border: 2px outset #ffff99;
+}
+.bgimage{
+background: #ffffcc;
+}
+.catbg, .titlebg{
+height: 26px !important;
+}
+font.cattext{
+color: #000000;
+}
+input, select, textarea, option {
+background: #0099ff;
+color: #ffffff;
+}
+input, select, textarea {
+border: 2px inset #9965ff;
+}

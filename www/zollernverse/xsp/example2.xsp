@@ -1,0 +1,34 @@
+#!xsp;
+
+clearall();
+if exists(books.xml) then <delete books.xml>;
+create books.xml with root(books);
+	
+	#Harry Potter;
+	append element book to /books in books.xml;
+		set attr @category="children" to //book in books.xml;
+		append element title to //book in books.xml;
+			set attr @lang="en" to //book/title in books.xml;
+			append text "Harry Potter" to //book/title in books.xml;
+		append element price to //book in books.xml;
+			append text "29.99" to //book/price in books.xml;
+		append element author to //book in books.xml;
+			append text "J K. Rowling" to //book/author in books.xml;
+		append element year to //book in books.xml;
+			append text "2005" to //book/year in books.xml;
+			
+	#Learning XML;
+	append element book to /books in books.xml;
+		set attr @category="web" to //book[2] in books.xml;
+		append element title to //book[2] in books.xml;
+			set attr @lang="en" to //book[2]/title in books.xml;
+			append text "Learning XML" to //book[2]/title in books.xml;
+		append element price to //book[2] in books.xml;
+			append text "39.95" to //book[2]/price in books.xml;
+		append element author to //book[2] in books.xml;
+			append text "Erik T. Ray" to //book[2]/author in books.xml;
+		append element year to //book[2] in books.xml;
+			append text "2003" to //book[2]/year in books.xml;
+	
+say "File processed.";
+if exists(example6.xsp) then <parse example6.xsp> else <say " Next example file does not exist.">;

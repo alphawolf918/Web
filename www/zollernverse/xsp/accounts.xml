@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<accounts for="employees">
+  <user>
+    <name>pshannon</name>
+    <password>ps2448</password>
+  </user>
+  <user>
+    <name>mpearson</name>
+    <password>mp2448</password>
+  </user>
+</accounts>

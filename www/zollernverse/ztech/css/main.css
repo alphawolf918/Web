@@ -1,0 +1,185 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #60f;
+	background-image: url(../images/mcbg4.png);
+	background-attachment: fixed;
+	margin: 1% 1% 1% 1%;
+	font-family: Tahoma,Verdana,Helvetica,Arial;
+	font-size: 13px;
+}
+
+#container {
+	margin-left: 15%;
+	position: absolute;
+	width: 76%;
+	height: 800px;
+}
+
+div#logoContainer {
+	position: absolute;
+	min-height: 25%;
+	min-width: 88%;
+}
+
+img.logo {
+	position: absolute;
+	min-width: 76%;
+	min-height: 20%;
+	margin-left: 9%;
+	cursor: pointer;
+}
+
+a.externalLink, a.externalLink:visited {
+	color: #39f;
+	text-decoration: none;
+}
+
+a.externalLink:hover {
+	color: #09e;
+}
+
+nav#navContainer {
+	background: linear-gradient(#09f, #3cf);
+	color: #eee;
+	margin-top: 14%;
+	margin-left: -5%;
+	position: absolute;
+	height: 9%;
+	min-width: 103%;
+	border-radius: 8px;
+	z-index: 10;
+	border: 1px outset #39f;
+}
+
+.navRow {
+	margin-left: 4%;
+}
+
+.navCell {
+	border-left: 1px solid #ddd;
+	height: 60px;
+	width: 1%;
+	top: 0;
+	left: 0;
+	background-position: left top;
+	text-align: center;
+}
+
+.navCell:not(.emptyCell):not(.lastCell):not(#specialNavCell):hover {
+	background: linear-gradient(#ffa500, #ffc455);
+	width: 1%;
+	z-index: -1;
+}
+
+#specialNavCell {
+	background: linear-gradient(#39f, #09f) !important;
+	width: 1%;
+	z-index: -1;
+}
+
+.emptyCell {
+	border: none !important;
+	width: 1% !important;
+}
+
+.lastCell {
+	width: 1% !important;
+	margin-right: 1% !important;
+}
+
+div.navButton {
+	display: inline-block;
+	font-family: Tahoma,Arial !important;
+	font-size: 21px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 1001;
+	margin-left: 4%;
+	padding-left: 4%;
+	height: 50%;
+	background-position: left top;
+}
+
+a.navLink {
+	color: #eee;
+	text-decoration: none;
+	z-index: 3;
+	text-align: center;
+	padding: 2px;
+}
+
+.glare {
+	position: absolute;
+	opacity: .4;
+	top: 0;
+	left: 0;
+	border-radius: 8px;
+	height: 2%;
+	width: 96%;
+	padding: 2%;
+	background-color: rgba(255, 255, 255, 0.25);
+	background: gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+	z-index: -1;
+}
+
+div.hsep, div#mainBody {
+	background: linear-gradient(#fff, #ddd);
+	position: absolute;
+	border: 1px solid #444;
+	min-width: 99%;
+	padding: 2%;
+	border-radius: 5px;
+}
+
+div.hsep {
+	margin-top: 24%;
+	margin-left: -5%;
+}
+
+div#mainBody {
+	height: 665px !important;
+	margin-left: -5%;
+	margin-top: 32%;
+	padding: 2%;
+	overflow-y: auto;
+	opacity: .9;
+}
+
+#footer {
+	padding: 2%;
+	position: absolute;
+	margin-bottom: 1%;
+}
+
+div.titleBar {
+	background: linear-gradient(#09f, #3bf);
+	position: absolute;
+	height: 8%;
+	width: 94%;
+	border: 1px outset #39f;
+	border-radius: 5px;
+	padding-top: 1%;
+	padding-left: 2%;
+	text-align: justify;
+	color: #eee;
+	font-size: 21px;
+}
+
+div.text {
+	margin-top: 8%;
+	position: absolute;
+	min-height: 550px;
+	width: 92%;
+	padding: 2%;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	background: #fff;
+}
+
+div.br {
+	height: 10px;
+}

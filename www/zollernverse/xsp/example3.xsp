@@ -1,0 +1,22 @@
+#!xsp;
+#Creates accounts and adds them to the XML database;
+
+clear();
+if exists(accounts.xml) then <delete accounts.xml>;
+create accounts.xml with root(accounts);
+	set attr @for="employees" to /accounts in accounts.xml;
+	append element user to //accounts in accounts.xml;
+		append element id to //user in accounts.xml;
+			append text "1" to //id in accounts.xml;
+		append element name to //user in accounts.xml;
+			append text "pshannon" to //name in accounts.xml;
+		append element password to //user in accounts.xml;
+			append text "ps2448" to //password in accounts.xml;
+	append element user to //accounts in accounts.xml;
+		append element id to //user[2] in accounts.xml;
+			append text "2" to //id[2] in accounts.xml;
+		append element name to //user[2] in accounts.xml;
+			append text "mikep" to //name[2] in accounts.xml;
+		append element password to //user[2] in accounts.xml;
+			append text "mp2448" to //password[2] in accounts.xml;
+parse example5.xsp;

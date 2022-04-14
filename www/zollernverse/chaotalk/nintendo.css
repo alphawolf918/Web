@@ -1,0 +1,24 @@
+.titlebg, .catbg {
+   background:url("http://www.uchaogarden.com/chaotalk/nintendogradient.png");
+}
+ input, select, textarea, option {
+   background-color:#000000;
+   color:#eeeeee;
+   font-size:11px;
+}
+.titlebg, .catbg, .windowbg, .windowbg2 {
+  border:1px solid #555555;
+}
+ input, textarea {
+   border:2px inset #3399ff;
+}
+ body {
+  background-image:url("http://www.uchaogarden.com/chaotalk/starfox.png");
+  background-attachment:fixed;
+}
+  .quote, .code{
+    font-size:12px;
+  }
+   ul li{
+     list-style-image:url("http://www.uchaogarden.com/chaotalk/coin.gif");
+  }

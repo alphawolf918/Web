@@ -1,0 +1,25 @@
+User-agent: BaiduSpider
+Disallow: /
+User-agent: Jeeves
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+User-agent: *
+Disallow: /buttons
+Disallow: /cgi-bin
+Disallow: /chaodrives
+Disallow: /database
+Disallow: /Zollernverse_halo
+Disallow: /errors
+Disallow: /fonts
+Disallow: /gardens
+Disallow: /habitats
+Disallow: /plugins
+Disallow: /slogsx
+Disallow: /smilies
+Disallow: /ucgimages
+Disallow: /userchao
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 30.00

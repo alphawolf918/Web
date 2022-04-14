@@ -1,0 +1,14 @@
+-Open Computers
+-Computronics (Add - http://wiki.vex.tty.sh/wiki:computronics)
+
+-Not Enough Items
+-Waila
+-CodeChickenCore
+
+-Thermal Expansion
+-Thermal Foundation
+-Redstone Arsenal (potential removal)
+-CoFH Core
+-Thermal Dynaics
+
+-Zollern Extras

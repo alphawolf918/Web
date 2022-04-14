@@ -1,0 +1,73 @@
+select, option{
+background: #0065ff;
+font-size:13px;
+}
+select{
+border:1px dashed #0099ff;
+}
+.catbg, .titlebg{
+background: transparent url("gradient.png") no-repeat;
+height:30px;
+}
+.menubg{
+background-color:#00008b;
+}
+ul li{
+list-style-image:url("list.gif");
+}
+div.menu ul li{
+height:15px;
+}
+div#menu{
+text-align:center;
+}
+body{
+scrollbar-3dlight-color:#0099ff;
+scrollbar-arrow-color:#ffff00;
+scrollbar-track-color:#0000ff;
+scrollbar-darkshadow-color:#000000;
+scrollbar-face-color:#0099ff;
+scrollbar-highlight-color:#000000;
+scrollbar-shadow-color:#0000ff;
+}
+fieldset#post{
+border:1px dashed #6699ff;
+}
+fieldset#menu{
+border:1px solid #eeeeee;
+}
+legend{
+font-size:13px;
+font-weight:bold;
+}
+input,textarea{
+background: url("chaobg.png") center center;
+border:1px dashed #0099ff;
+}
+input,textarea,select,option{
+color:#ffffff;
+}
+.bgimage{
+background: url("chaobg.png");
+}
+.top{
+background: transparent url("top.png") top center no-repeat;
+height:240px;
+}
+.middle{
+background: transparent url("middle.png") top center repeat-y;
+height:792px;
+}
+.bottom{
+background: transparent url("bottom.png") center no-repeat;
+height:128px;
+}
+input[type="submit"],input[type="button"],input[type="reset"]{
+border:2px ouset #0065ff !important;
+}
+.code,.quote{
+font-size:12px;
+}
+/*.windowbg, .windowbg2, .catbg, .titlebg, .bgimage {
+border: 1px outset #6599ff;
+}*/

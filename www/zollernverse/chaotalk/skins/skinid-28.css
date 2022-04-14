@@ -1,0 +1,15 @@
+.windowbg, .windowbg2 { background: url("http://www.uchaogarden.com/chaotalk/skins/gradient-01.png") !important; }
+
+.titlebg { background: url("http://www.uchaogarden.com/chaotalk/skins/gradientop.png") !important; height: 26px; }
+
+.catbg { background-image: url("http://www.uchaogarden.com/chaotalk/skins/gradient-02.png"); background-repeat: repeat-x; height: 26px; }
+
+.bordercolor { background: none; }
+
+input, textarea, select, option { background: url("http://www.uchaogarden.com/chaotalk/skins/gradient-01.png") fixed; color: #eeeeee; }
+
+input, textarea {  border: 1px solid #0099ff; }
+
+select { border: 1px solid #0099ff; }
+
+select, option { font-size: 12px; }

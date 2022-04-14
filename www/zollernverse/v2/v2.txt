@@ -1,0 +1,79 @@
+       	              			.ach { float:left;border:1px solid #000000;border-radius:25px; }
+body { 
+	background: url("../aurorabg.png");
+	background-attachment: fixed;
+	color: #444444;
+ }
+.banner { 
+	position: relative; 
+}
+.mainbg { 
+	background: url("../auroramainbg.png");
+	color: #444444;
+}
+.mainbg2 {
+ 	background: url("../auroramainbg.png");
+	color: #666666;
+}
+textarea {
+	color: #444444;
+}
+.bordercolor { 
+	background-color: #cccccc;
+ }
+.titlebg { 
+	background: url("../auroragrad.png") repeat; 
+	border-radius: 5px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold; 
+	height: 24px;
+	}
+.catbg { 
+	background: url("../auroragrad.png") repeat;
+	border-radius: 5px;
+	color: #ffffff;
+	text-align: center; 
+	font-weight: bold;
+	height: 24px;
+ }
+.hmenu {
+	border: 1px solid #000000;
+}
+a { 
+	text-decoration: none; 
+	color: #0055dd;
+}
+a:visisted {
+	text-decoration: none;
+	color #0055dd;
+}
+a:hover { 
+	text-decoration: none; 
+	color: #0099ff;
+}
+.siteLink {
+	color: #0055dd;
+	font-family: "Verdana";
+	font-size: 13px !important;
+}
+table {
+	 border: 1px solid #000000; 
+	 border-radius: 10px;
+}
+.titlebg a, .catbg a {
+	color: #ffffff !important;
+}
+td,th { 
+	border: 1px solid url("../aurorabg.png");
+}
+.code, .quote { background: #dddddd; color: #000000; font-size: 13px; border: 1px solid #000000; padding: 2px; border-radius: 5px; }
+.code {  font-family: "Courier New"; }
+input[type="text"],textarea, input[type="password"], select { border-radius: 5px; font-size: 13px; border: 1px solid #000000; }
+input[type="text"], input[type="password"] { height: 31px; }
+img { border: none; }
+img[src="admin.gif"] { height: 16px; width: 16px; }
+.inside { height:100px; width:300px; overflow-y: auto; display: none; z-index: 1000; position: absolute; text-align: left !important; }
+.report { border-radius: 25px; display: none; }
+.achievement { background: url("../aurorabg.png"); color: #000000; border-radius: 25px; width: 170px; height: 40px; border: 1px solid #000000; padding: 4px; position: absolute; z-index: 1000; display: none; }
+.sc { background: url("../aurorabg.png"); color: #000000; display: none; border: 1px solid #000000; padding: 2px; position: absolute; z-index: 1000; border-radius: 25px; }       	              			

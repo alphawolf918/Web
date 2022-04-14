@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="xsl_style.xsl" ?>
+<class mod="Public" name="myclass">
+  <member>
+    <testrun>testrun</testrun>
+  </member>
+</class>

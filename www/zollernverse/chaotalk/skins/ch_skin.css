@@ -1,0 +1,6 @@
+.titlebg, .catbg {
+background-image: url("http://www.uchaogarden.com/chaotalk/skins/ch_grad.gif");
+}
+.windowbg, .windowbg2 {
+background-image: url("http://www.uchaogarden.com/chaotalk/skins/ch_wbg.gif") !important;
+}

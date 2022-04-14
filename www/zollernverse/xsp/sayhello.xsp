@@ -1,0 +1,5 @@
+#!xsp-module;
+say "Hello world.";
+set var name = "Paul";
+say " My name is " & var:name;
+say "."

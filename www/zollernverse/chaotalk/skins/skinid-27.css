@@ -1,0 +1,7 @@
+.catbg, .titlebg { background: url("http://img383.imageshack.us/img383/9097/ltgradientdz9.png"); }
+
+textarea, input { border: 1px dashed #80f080; background: #008b00; color: #80f080; }
+
+select { border: 1px dashed #80f080; background: #008b00; }
+
+option { background: #008b00; color: #80f080; }

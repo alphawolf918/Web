@@ -1,0 +1,8 @@
+.catbg, .titlebg { 
+background-image: url("http://img228.imageshack.us/img228/9767/nightopiagradientrt1.jpg");
+height: 28px;
+text-align: center;
+}
+.catbg, .titlebg, .windowbg, .windowbg2 {
+border: 2px outset #00ff00;
+}

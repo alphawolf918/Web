@@ -1,0 +1,40 @@
+#.htaccess file for http://www.zollenverse.org/
+
+
+#URL Rewriting
+RewriteRule ^\/?xcrypt\/?$ /xcrypt/index.php [NC]
+RewriteRule ^\/?admin\/?$ ?p=admin [NC]
+RewriteRule ^\/?home\/?$ . [NC]
+RewriteRule ^\/?search\/?$ ?p=search [NC]
+RewriteRule ^\/?updates\/?([0-9]*)$ ?page=$1 [NC]
+RewriteRule ^\/?update\/?([0-9]*)$ ?id=$1 [NC]
+RewriteRule ^\/?page\/?(.*)$ ?p=$1 [NC]
+RewriteRule ^\/?create(.*)$ ?p=create$1 [NC]
+RewriteRule ^\/?add(.*)$ ?p=add$1 [NC]
+RewriteRule ^\/?edit(.*)\/([0-9]*)$ ?p=edit$1&id=$2 [NC]
+RewriteRule ^\/?delete(.*)\/([0-9]*)$ ?p=delete$1&id=$2 [NC]
+RewriteRule ^\/?p\/?(.*)$ ?p=page&id=$1 [NC]
+RewriteRule ^\/?tag\/?(.*)$ ?p=tags&filter=$1 [NC]
+RewriteRule ^\/?export\/?(.*)$ ?p=exportpage&id=$1 [NC]
+RewriteRule ^\/?import\/?$ ?p=importpage [NC]
+RewriteRule ^\/?vc\/?(.*)$ ?p=viewcategory&id=$1 [NC,L]
+RewriteRule \.exe - [F]
+RewriteRule \.msi - [F]
+RewriteRule ^forum(s)?\/?$ forum.php [NC,L]
+
+#Block Spiders
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?boson([0-9]{0,3})?.ahrefs.com.*$ [NC]
+RewriteRule .* - [F,L]
+SetEnvIfNoCase User-Agent ^$ bad_bot
+SetEnvIfNoCase User-Agent "^Baiduspider-video" bad_bot
+SetEnvIfNoCase User-Agent "^AITCSRobot\/*\.*" bad_bot
+SetEnvIfNoCase User-Agent "^GetRight\/*\.*" bad_bot
+SetEnvIfNoCase User-Agent "^(.*)-?(\d*)\.phishmongers\.com" bad_bot
+SetEnvIfNoCase User-Agent "(.*)\.(.*)\.amazonaws\.com" bad_bot
+
+#Prevent certain users from accessing the site, period
+Order Allow,Deny
+Allow from all
+Deny from 166.147.120.158
+Deny from 188.165.15.
+Deny from 198.186.192.

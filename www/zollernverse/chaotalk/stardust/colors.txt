@@ -1,0 +1,36 @@
+Skin Name:	            Stardust Speedway
+Logo URL:	
+Font:                       Verdana,Arial
+Background Color:           000000
+Background Image Fixed:     Yes
+Text Color:                 FFFFFF
+Link Color:                 0033FF
+Active Link Color:          003399
+Visited Link Color:         0033CC
+Title Background Color:     000000
+Title Text Color:           FFFFFF
+Category Background Color:  0000AA (use image instead)
+Category Text Color:        FFFFFF
+News Title Background Color:000000
+News Title Text Color:      FFFFFF
+News Background Color:      000000
+News Text Color:            FFFFFF
+Window Background 1:	    000000
+Window Background 2:        000000
+Board Highlight Color:      0000AA
+Thread Highlight Color:	    0000AA
+Table Border Color:         0000AA
+
+Background Color:	    000000
+Text Color:	            FFFFFF
+Title Background Color:	    000066
+Title Text Color:	    FFFFFF
+
+
+-Stardust Speedway skin made by P.P.A.
+---Give credit if used.
+-No editing please.
+---For questions mail me: ppachao@googlemail.com
+-Screenname on AIM: PPAChao 
+
+

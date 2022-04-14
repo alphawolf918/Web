@@ -1,0 +1,14 @@
+.titlebg,.catbg{
+background-image:url('http://img168.imageshack.us/img168/5103/vistatx9.jpg');
+height:25px !important;
+background-repeat:repeat-x;
+} 
+.titlebg,.catbg,.windowbg,.windowbg2{
+border:none;
+} 
+select,input,textarea,option{
+background-color:#000000;
+color:#ffffff;
+border:none;
+font-size:12px;
+}

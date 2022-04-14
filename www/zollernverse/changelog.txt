@@ -1,0 +1,12 @@
+Changelog:
+
+* Updated forum settings options.
+* Each option is now explained.
+* Separated settings by section.
+* Can now toggle whether categories are split.
+* Can now toggle whether text on boards is centered or not.
+* Can now set the default skin for the site.
+* Can now change the name of the forums.
+* Can now change the amount of topics per page in a board.
+* Can now change the amount of posts per topic in a board.
+* Remodeled V2 skin, now called V3.
